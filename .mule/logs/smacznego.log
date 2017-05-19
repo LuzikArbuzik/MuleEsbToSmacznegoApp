@@ -6536,3 +6536,185 @@ org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found
 *   Batch module default engine                                      *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2017-05-19 11:12:20,772 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smacznego'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:12:21,258 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-05-19 11:12:21,504 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-05-19 11:12:21,807 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-05-19 11:12:21,808 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-05-19 11:12:22,003 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Fri May 19 11:12:21 CEST 2017]; root of context hierarchy
+2017-05-19 11:12:25,445 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-19 11:12:27,359 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-05-19 11:12:27,969 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-tx-log\tx2.log
+2017-05-19 11:12:27,992 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-xa-tx-log\tx2.log
+2017-05-19 11:12:28,193 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-05-19 11:12:28,204 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllRestaurants
+2017-05-19 11:12:28,204 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5a936e64
+2017-05-19 11:12:28,263 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllRestaurants.stage1
+2017-05-19 11:12:28,300 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllOrders
+2017-05-19 11:12:28,300 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e784320
+2017-05-19 11:12:28,310 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllOrders.stage1
+2017-05-19 11:12:28,311 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllClients
+2017-05-19 11:12:28,312 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1a256d80
+2017-05-19 11:12:28,324 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllClients.stage1
+2017-05-19 11:12:28,325 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllDishes
+2017-05-19 11:12:28,326 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6215366a
+2017-05-19 11:12:28,339 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllDishes.stage1
+2017-05-19 11:12:28,341 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllMenus
+2017-05-19 11:12:28,341 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1b410308
+2017-05-19 11:12:28,353 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllMenus.stage1
+2017-05-19 11:12:28,355 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getRestaurantById
+2017-05-19 11:12:28,355 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@483b0690
+2017-05-19 11:12:28,368 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getRestaurantById.stage1
+2017-05-19 11:12:28,373 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getOrderById
+2017-05-19 11:12:28,374 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@233db8e9
+2017-05-19 11:12:28,386 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getOrderById.stage1
+2017-05-19 11:12:28,388 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getClientById
+2017-05-19 11:12:28,388 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c0e00a8
+2017-05-19 11:12:28,400 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getClientById.stage1
+2017-05-19 11:12:28,401 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getMenuById
+2017-05-19 11:12:28,401 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@27443560
+2017-05-19 11:12:28,411 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getMenuById.stage1
+2017-05-19 11:12:28,412 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getdishById
+2017-05-19 11:12:28,413 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2539cd1c
+2017-05-19 11:12:28,421 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getdishById.stage1
+2017-05-19 11:12:29,443 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego\smacznego.xml'}]"
+2017-05-19 11:12:29,443 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego\smacznego.xml'}]"
+2017-05-19 11:12:32,489 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smacznego'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:12:32,493 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-05-19 11:12:32,493 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-05-19 11:12:32,627 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-05-19 11:12:32,634 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:12:32,642 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-05-19 11:12:32,647 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllRestaurants
+2017-05-19 11:12:32,649 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllRestaurants.stage1
+2017-05-19 11:12:32,658 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllOrders
+2017-05-19 11:12:32,659 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllOrders.stage1
+2017-05-19 11:12:32,664 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllClients
+2017-05-19 11:12:32,664 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllClients.stage1
+2017-05-19 11:12:32,669 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllDishes
+2017-05-19 11:12:32,669 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllDishes.stage1
+2017-05-19 11:12:32,676 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllMenus
+2017-05-19 11:12:32,676 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllMenus.stage1
+2017-05-19 11:12:32,684 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getRestaurantById
+2017-05-19 11:12:32,685 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getRestaurantById.stage1
+2017-05-19 11:12:32,691 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getOrderById
+2017-05-19 11:12:32,692 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getOrderById.stage1
+2017-05-19 11:12:32,697 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getClientById
+2017-05-19 11:12:32,697 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getClientById.stage1
+2017-05-19 11:12:32,705 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getMenuById
+2017-05-19 11:12:32,706 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getMenuById.stage1
+2017-05-19 11:12:32,711 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getdishById
+2017-05-19 11:12:32,711 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getdishById.stage1
+2017-05-19 11:12:33,550 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-05-19 11:12:33,600 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smacznego                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-05-19 11:33:21,868 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smacznego'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:33:22,363 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-05-19 11:33:22,615 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-05-19 11:33:22,909 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-05-19 11:33:22,909 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-05-19 11:33:23,107 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Fri May 19 11:33:23 CEST 2017]; root of context hierarchy
+2017-05-19 11:33:26,488 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-19 11:33:28,397 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-05-19 11:33:29,035 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-tx-log\tx2.log
+2017-05-19 11:33:29,050 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego\queue-xa-tx-log\tx2.log
+2017-05-19 11:33:29,211 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-05-19 11:33:29,218 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllRestaurants
+2017-05-19 11:33:29,218 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5a936e64
+2017-05-19 11:33:29,265 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllRestaurants.stage1
+2017-05-19 11:33:29,288 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllOrders
+2017-05-19 11:33:29,288 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e784320
+2017-05-19 11:33:29,297 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllOrders.stage1
+2017-05-19 11:33:29,299 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllClients
+2017-05-19 11:33:29,299 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1a256d80
+2017-05-19 11:33:29,308 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllClients.stage1
+2017-05-19 11:33:29,310 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllDishes
+2017-05-19 11:33:29,310 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6215366a
+2017-05-19 11:33:29,323 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllDishes.stage1
+2017-05-19 11:33:29,325 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllMenus
+2017-05-19 11:33:29,325 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1b410308
+2017-05-19 11:33:29,335 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllMenus.stage1
+2017-05-19 11:33:29,336 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getRestaurantById
+2017-05-19 11:33:29,336 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@483b0690
+2017-05-19 11:33:29,347 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getRestaurantById.stage1
+2017-05-19 11:33:29,351 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getOrderById
+2017-05-19 11:33:29,351 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@233db8e9
+2017-05-19 11:33:29,364 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getOrderById.stage1
+2017-05-19 11:33:29,365 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getClientById
+2017-05-19 11:33:29,365 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c0e00a8
+2017-05-19 11:33:29,375 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getClientById.stage1
+2017-05-19 11:33:29,378 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getMenuById
+2017-05-19 11:33:29,378 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@27443560
+2017-05-19 11:33:29,389 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getMenuById.stage1
+2017-05-19 11:33:29,391 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getdishById
+2017-05-19 11:33:29,391 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2539cd1c
+2017-05-19 11:33:29,402 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getdishById.stage1
+2017-05-19 11:33:30,180 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego\smacznego.xml'}]"
+2017-05-19 11:33:30,181 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego\smacznego.xml'}]"
+2017-05-19 11:33:33,224 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smacznego'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:33:33,228 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-05-19 11:33:33,228 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-05-19 11:33:33,335 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-05-19 11:33:33,340 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-19 11:33:33,347 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-05-19 11:33:33,350 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllRestaurants
+2017-05-19 11:33:33,351 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllRestaurants.stage1
+2017-05-19 11:33:33,359 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllOrders
+2017-05-19 11:33:33,359 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllOrders.stage1
+2017-05-19 11:33:33,365 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllClients
+2017-05-19 11:33:33,365 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllClients.stage1
+2017-05-19 11:33:33,370 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllDishes
+2017-05-19 11:33:33,370 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllDishes.stage1
+2017-05-19 11:33:33,376 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllMenus
+2017-05-19 11:33:33,376 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllMenus.stage1
+2017-05-19 11:33:33,383 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getRestaurantById
+2017-05-19 11:33:33,383 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getRestaurantById.stage1
+2017-05-19 11:33:33,388 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getOrderById
+2017-05-19 11:33:33,388 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getOrderById.stage1
+2017-05-19 11:33:33,395 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getClientById
+2017-05-19 11:33:33,396 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getClientById.stage1
+2017-05-19 11:33:33,401 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getMenuById
+2017-05-19 11:33:33,402 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getMenuById.stage1
+2017-05-19 11:33:33,409 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getdishById
+2017-05-19 11:33:33,409 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getdishById.stage1
+2017-05-19 11:33:34,133 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-05-19 11:33:34,273 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smacznego                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
