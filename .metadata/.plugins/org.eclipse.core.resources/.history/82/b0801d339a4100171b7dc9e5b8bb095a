@@ -29,8 +29,8 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
         <http:listener config-ref="HTTP_Listener_Configuration" path="/location" allowedMethods="POST" doc:name="HTTP"/>
         <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
         <json:json-to-xml-transformer doc:name="JSON to XML"/>
-        <mulexml:xslt-transformer xsl-file="C:\Users\Komputer\Dropbox\PWR - Informatyka\SEM2\Systemy informatyczne - kurier\XML\xsltGenerujacyMape.xsl" maxIdleTransformers="2" maxActiveTransformers="5" doc:name="XSLT"/>
         <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="xslt" responseTimeout="10000" doc:name="File"/>
+        <mulexml:xslt-transformer xsl-file="C:\Users\Komputer\Dropbox\PWR - Informatyka\SEM2\Systemy informatyczne - kurier\XML\xsltGenerujacyMape.xsl" maxIdleTransformers="2" maxActiveTransformers="5" doc:name="XSLT"/>
     </flow>
 
     
