@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:json="http://www.mulesoft.org/schema/mule/json"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="/mule" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration_To_Python" host="localhost" port="8000" doc:name="HTTP Request Configuration"/>
+    <flow name="smacznegopostFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/restaurants" allowedMethods="POST" doc:name="HTTP">
+            <http:response-builder>
+                <http:header headerName="Content-Type" value="application/json"/>
+            </http:response-builder>
+        </http:listener>
+        <dw:transform-message doc:name="Transform Message" metadata:id="b8fbbdab-38eb-4a1a-943c-bce21f1be376">
+            <dw:input-payload mimeType="application/json"/>
+            <dw:input-outbound-property mimeType="application/json" propertyName="MULE_ENCODING"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	url: payload.url,
+	menu: {
+		url: payload.menu.url,
+		dishes: payload.menu.dishes map ((dish , indexOfDish) -> {
+			url: dish.url,
+			name: dish.name,
+			price: dish.price
+		})
+	},
+	address: {
+		url: payload.address.url,
+		id: payload.address.id,
+		city: payload.address.city,
+		street: payload.address.street,
+		address_num: payload.address.address_num,
+		door_num: payload.address.door_num
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="test1.json" responseTimeout="10000" doc:name="File"/>
+        <http:request config-ref="HTTP_Request_Configuration_To_Python" path="/restaurants/" method="POST" doc:name="HTTP"/>
+    </flow>
+    <flow name="smacznegopostFlow1">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/orders" allowedMethods="POST" doc:name="HTTP"/>
+        <set-payload doc:name="Set Payload" metadata:id="db8f7482-89c9-465f-be67-e680a040158b"/>
+        <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="test" responseTimeout="10000" doc:name="File"/>
+        <http:request config-ref="HTTP_Request_Configuration_To_Python" path="/orders/" method="POST" doc:name="HTTP"/>
+    </flow>
+    
+    
+    
+    
+    
+    
+    
+</mule>

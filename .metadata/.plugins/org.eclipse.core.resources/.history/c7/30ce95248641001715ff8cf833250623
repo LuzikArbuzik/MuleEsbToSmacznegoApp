@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration_Port_8081" host="0.0.0.0" port="8081" basePath="/mule" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" host="localhost" port="8000" doc:name="HTTP Request Configuration"/>
+    <flow name="GetAllOrders">
+        <http:listener config-ref="HTTP_Listener_Configuration_Port_8081" path="/orders" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/orders/" method="GET" doc:name="HTTP"/>
+    </flow>
+    <flow name="GetOrderById">
+        <http:listener config-ref="HTTP_Listener_Configuration_Port_8081" path="/orders/{id}" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/orders/{id}/" method="GET" doc:name="HTTP">
+            <http:request-builder>
+                <http:uri-param paramName="id" value="#[message.inboundProperties.'http.uri.params'.id]"/>
+            </http:request-builder>
+        </http:request>
+    </flow>
+    <flow name="PostOrder">
+        <http:listener config-ref="HTTP_Listener_Configuration_Port_8081" path="/order" allowedMethods="POST" doc:name="HTTP"/>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="ERROR" doc:name="Logger"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/orders/" method="POST" doc:name="HTTP"/>
+    </flow>
+</mule>
