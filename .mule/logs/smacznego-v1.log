@@ -1095,3 +1095,212 @@ java.net.ConnectException: Connection refused: no further information
 2017-05-26 00:50:41,624 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.978145318'. Object is: FileMessageDispatcher
 2017-05-26 00:50:41,628 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.978145318'. Object is: FileMessageDispatcher
 2017-05-26 00:50:41,632 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Komunikaty-mule\xsltTestv1
+2017-05-26 11:17:55,901 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smacznego-v1'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:17:56,520 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-05-26 11:17:56,817 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-05-26 11:17:57,145 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-05-26 11:17:57,145 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-05-26 11:17:57,349 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Fri May 26 11:17:57 CEST 2017]; root of context hierarchy
+2017-05-26 11:18:01,755 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-26 11:18:03,570 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-05-26 11:18:04,055 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-tx-log\tx2.log
+2017-05-26 11:18:04,071 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-xa-tx-log\tx2.log
+2017-05-26 11:18:04,071 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-05-26 11:18:04,243 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-05-26 11:18:04,259 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllOrdersFromServer
+2017-05-26 11:18:04,259 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1727e03a
+2017-05-26 11:18:04,290 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllOrdersFromServer.stage1
+2017-05-26 11:18:04,305 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetOrderByIdFromServer
+2017-05-26 11:18:04,305 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3610f277
+2017-05-26 11:18:04,321 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetOrderByIdFromServer.stage1
+2017-05-26 11:18:04,321 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostOrderToServer
+2017-05-26 11:18:04,321 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7df28f1
+2017-05-26 11:18:04,337 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostOrderToServer.stage1
+2017-05-26 11:18:04,337 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostLocationFromKurierXsltAndServer
+2017-05-26 11:18:04,337 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38d08cb5
+2017-05-26 11:18:04,337 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostLocationFromKurierXsltAndServer.stage1
+2017-05-26 11:18:06,649 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego-v1\smacznego-v1.xml'}]"
+2017-05-26 11:18:06,654 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego-v1\smacznego-v1.xml'}]"
+2017-05-26 11:18:09,671 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smacznego-v1'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:18:09,687 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-05-26 11:18:09,687 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-05-26 11:18:09,781 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/mule
+2017-05-26 11:18:09,796 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=68f6e55d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-05-26 11:18:09,796 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=68f6e55d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-05-26 11:18:09,796 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-05-26 11:18:09,796 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:18:09,812 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-05-26 11:18:09,812 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllOrdersFromServer
+2017-05-26 11:18:09,812 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllOrdersFromServer.stage1
+2017-05-26 11:18:09,828 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetOrderByIdFromServer
+2017-05-26 11:18:09,828 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetOrderByIdFromServer.stage1
+2017-05-26 11:18:09,828 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostOrderToServer
+2017-05-26 11:18:09,828 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostOrderToServer.stage1
+2017-05-26 11:18:09,843 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostLocationFromKurierXsltAndServer
+2017-05-26 11:18:09,843 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostLocationFromKurierXsltAndServer.stage1
+2017-05-26 11:18:10,547 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-05-26 11:18:18,689 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smacznego-v1:type=Connector,name="connector.file.mule.default.1"
+2017-05-26 11:18:18,714 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smacznego-v1                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-05-26 11:21:18,092 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {"location": {"id":12345,"name":"Jan","surname":"Kowalski","longitude":"51.107175","latitude":"17.031997"}}
+2017-05-26 11:21:18,582 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.717613827'. Object is: FileMessageDispatcher
+2017-05-26 11:21:18,602 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.717613827'. Object is: FileMessageDispatcher
+2017-05-26 11:21:18,610 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Komunikaty-mule\xsltTestv1
+2017-05-26 11:22:44,311 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {"location": {"id":12345,"name":"Jan","surname":"Kowalski","longitude":"51.107175","latitude":"17.031997"}}
+2017-05-26 11:22:44,338 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Komunikaty-mule\xsltTestv1
+2017-05-26 11:23:27,296 [[smacznego-v1].HTTP_Listener_Configuration_Port_8081.worker.01] ERROR org.mule.api.processor.LoggerMessageProcessor - {
+"client": {
+    "first_name":"asdasdas",
+    "last_name":"asdasdasdasdsa",
+    "phone_number":"+48 123123123",
+    "address": {
+        "city":"Wroclaw",
+        "street":"Grunwaldzka",
+        "address_num":"12",
+        "door_num":"1"
+        }
+    }, 
+"dishes": 
+[
+    {"name": "pizza", "quantity": 3}, 
+    {"name": "pepsi", "quantity": 2}
+], 
+"restaurant": {
+    "name": "Telepizza", 
+    "address":{
+        "city": "Wroclaw",
+        "street":"Grunwaldzka",
+        "address_num":"55",
+        "door_num":"2"
+        }
+    }
+}
+2017-05-26 11:38:53,307 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smacznego-v1'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:38:53,464 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-05-26 11:38:53,560 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-05-26 11:38:53,681 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-05-26 11:38:53,681 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-05-26 11:38:53,753 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Fri May 26 11:38:53 CEST 2017]; root of context hierarchy
+2017-05-26 11:38:55,217 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-26 11:38:56,172 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-05-26 11:38:56,471 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-tx-log\tx2.log
+2017-05-26 11:38:56,479 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\smacznego-v1\queue-xa-tx-log\tx2.log
+2017-05-26 11:38:56,484 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-05-26 11:38:56,608 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-05-26 11:38:56,612 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetAllOrdersFromServer
+2017-05-26 11:38:56,612 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1727e03a
+2017-05-26 11:38:56,636 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetAllOrdersFromServer.stage1
+2017-05-26 11:38:56,651 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetOrderByIdFromServer
+2017-05-26 11:38:56,651 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3610f277
+2017-05-26 11:38:56,656 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetOrderByIdFromServer.stage1
+2017-05-26 11:38:56,659 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostOrderToServer
+2017-05-26 11:38:56,659 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7df28f1
+2017-05-26 11:38:56,669 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostOrderToServer.stage1
+2017-05-26 11:38:56,671 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostLocationFromKurierXsltAndServer
+2017-05-26 11:38:56,671 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38d08cb5
+2017-05-26 11:38:56,675 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostLocationFromKurierXsltAndServer.stage1
+2017-05-26 11:38:57,735 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego-v1\smacznego-v1.xml'}]"
+2017-05-26 11:38:57,736 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\smacznego-v1\smacznego-v1.xml'}]"
+2017-05-26 11:39:00,762 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smacznego-v1'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:39:00,764 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-05-26 11:39:00,764 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-05-26 11:39:00,819 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/mule
+2017-05-26 11:39:00,822 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=68f6e55d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-05-26 11:39:00,822 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=68f6e55d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-05-26 11:39:00,822 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-05-26 11:39:00,826 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-05-26 11:39:00,833 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-05-26 11:39:00,835 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetAllOrdersFromServer
+2017-05-26 11:39:00,836 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetAllOrdersFromServer.stage1
+2017-05-26 11:39:00,848 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetOrderByIdFromServer
+2017-05-26 11:39:00,848 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetOrderByIdFromServer.stage1
+2017-05-26 11:39:00,855 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostOrderToServer
+2017-05-26 11:39:00,855 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostOrderToServer.stage1
+2017-05-26 11:39:00,863 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostLocationFromKurierXsltAndServer
+2017-05-26 11:39:00,863 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostLocationFromKurierXsltAndServer.stage1
+2017-05-26 11:39:01,838 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-05-26 11:39:03,000 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smacznego-v1:type=Connector,name="connector.file.mule.default.1"
+2017-05-26 11:39:03,003 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smacznego-v1                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************

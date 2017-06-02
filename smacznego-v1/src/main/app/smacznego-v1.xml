@@ -34,7 +34,7 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
         <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
         <json:json-to-xml-transformer doc:name="JSON to XML"/>
         <mulexml:xslt-transformer xsl-file="C:\Users\Komputer\Dropbox\PWR - Informatyka\SEM2\Systemy informatyczne - kurier\XML\xsltGenerujacyMape.xsl" outputEncoding="UTF-8" maxIdleTransformers="2" maxActiveTransformers="5" doc:name="XSLT"/>
-        <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="xsltTestv1" responseTimeout="10000" doc:name="File"/>
+        <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="xsltTestv1.html" responseTimeout="10000" doc:name="File"/>
         <http:request config-ref="HTTP_Request_Configuration" path="/orders/2" method="GET" doc:name="HTTP"/>
     </flow>
 </mule>
