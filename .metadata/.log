@@ -11411,3 +11411,15 @@ Binding(CTRL+F,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+
+!ENTRY org.mule.tooling.core 2 0 2017-06-07 21:58:48.589
+!MESSAGE Authenticator was changed to class org.eclipse.ui.internal.net.auth.NetAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2017-06-07 21:58:48.590
+!MESSAGE Authenticator was changed to class org.eclipse.ui.internal.net.auth.NetAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2017-06-07 21:58:48.590
+!MESSAGE Authenticator was changed to class org.eclipse.ui.internal.net.auth.NetAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2017-06-07 21:58:48.591
+!MESSAGE Authenticator was changed to class org.eclipse.ui.internal.net.auth.NetAuthenticator. Restoring default authenticator to null

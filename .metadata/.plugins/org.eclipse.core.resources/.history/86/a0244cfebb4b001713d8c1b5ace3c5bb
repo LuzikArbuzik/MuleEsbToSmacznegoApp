@@ -18,6 +18,7 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
     </flow>
     <flow name="GetOrderByIdFromServer">
         <http:listener config-ref="HTTP_Listener_Configuration_Port_8081" path="/orders/{id}" allowedMethods="GET" doc:name="HTTP"/>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="ERROR" doc:name="Logger"/>
         <http:request config-ref="HTTP_Request_Configuration" path="/orders/{id}/" method="GET" doc:name="HTTP">
             <http:request-builder>
                 <http:uri-param paramName="id" value="#[message.inboundProperties.'http.uri.params'.id]"/>
@@ -26,7 +27,7 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
     </flow>
     <flow name="PostOrderToServer">
         <http:listener config-ref="HTTP_Listener_Configuration_Port_8081" path="/orders/" allowedMethods="POST" doc:name="HTTP"/>
-        <logger message="#[message.payloadAs(java.lang.String)]" level="ERROR" doc:name="Logger"/>
+        <file:outbound-endpoint path="C:\Users\Komputer\Desktop\Komunikaty-mule" outputPattern="POST ORDER" responseTimeout="10000" doc:name="File"/>
         <http:request config-ref="HTTP_Request_Configuration" path="/orders/" method="POST" doc:name="HTTP"/>
     </flow>
     <flow name="PostLocationFromKurierXsltAndServer">
