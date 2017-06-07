@@ -1,0 +1,272 @@
+2017-06-03 20:12:08,457 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mateusz'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:12:09,068 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-06-03 20:12:09,314 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-06-03 20:12:09,627 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-06-03 20:12:09,627 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-06-03 20:12:09,818 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Sat Jun 03 20:12:09 CEST 2017]; root of context hierarchy
+2017-06-03 20:12:13,455 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-03 20:12:15,927 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-06-03 20:12:16,783 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx2.log
+2017-06-03 20:12:16,819 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx2.log
+2017-06-03 20:12:16,830 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-06-03 20:12:17,168 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-06-03 20:12:17,176 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllOrders
+2017-06-03 20:12:17,177 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7885776b
+2017-06-03 20:12:17,257 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllOrders.stage1
+2017-06-03 20:12:18,342 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:12:18,342 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:12:18,391 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mateusz'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:12:18,395 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-06-03 20:12:18,395 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-06-03 20:12:18,544 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/mule
+2017-06-03 20:12:18,552 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=b3e86d5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:12:18,552 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=b3e86d5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:12:18,554 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-06-03 20:12:18,563 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:12:18,572 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-06-03 20:12:18,576 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllOrders
+2017-06-03 20:12:18,578 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllOrders.stage1
+2017-06-03 20:12:19,702 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-06-03 20:12:19,744 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mateusz:type=Connector,name="connector.file.mule.default.1"
+2017-06-03 20:12:19,751 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mateusz                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-06-03 20:12:43,776 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1340089393'. Object is: FileMessageDispatcher
+2017-06-03 20:12:43,809 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1340089393'. Object is: FileMessageDispatcher
+2017-06-03 20:12:43,819 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:12:44,816 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2017-06-03 20:12:44,816 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/mule/zamowienia/]
+2017-06-03 20:12:52,160 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:13:16,640 [[mateusz].HTTP_Listener_Configuration.worker.02] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:13:19,182 [[mateusz].HTTP_Listener_Configuration.worker.02] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:13:29,858 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mateusz'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:29,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getAllOrders
+2017-06-03 20:13:29,863 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getAllOrders.stage1
+2017-06-03 20:13:29,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2017-06-03 20:13:29,908 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2017-06-03 20:13:29,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.1340089393'. Object is: FileMessageDispatcher
+2017-06-03 20:13:29,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.1340089393'. Object is: FileMessageDispatcher
+2017-06-03 20:13:29,923 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/mule
+2017-06-03 20:13:29,927 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2017-06-03 20:13:29,927 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2017-06-03 20:13:29,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mateusz'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:29,954 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2017-06-03 20:13:29,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getAllOrders
+2017-06-03 20:13:29,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getAllOrders.stage1
+2017-06-03 20:13:29,969 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2017-06-03 20:13:29,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=b3e86d5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:13:29,985 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2017-06-03 20:13:30,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Sat Jun 03 20:12:09 CEST 2017]; root of context hierarchy
+2017-06-03 20:13:30,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "mateusz" shut down normally on: 03.06.17 20:13        *
+* Up for: 0 days, 0 hours, 1 mins, 11.925 sec                        *
+**********************************************************************
+2017-06-03 20:13:30,610 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mateusz'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:30,621 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app mateusz
+2017-06-03 20:13:30,632 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-06-03 20:13:30,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-06-03 20:13:30,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-06-03 20:13:30,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-06-03 20:13:30,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@47048df9: startup date [Sat Jun 03 20:13:30 CEST 2017]; root of context hierarchy
+2017-06-03 20:13:31,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-03 20:13:32,131 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx2.log
+2017-06-03 20:13:32,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx2.log
+2017-06-03 20:13:32,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-06-03 20:13:32,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-06-03 20:13:32,269 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllOrders
+2017-06-03 20:13:32,269 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1e7eaf3
+2017-06-03 20:13:32,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllOrders.stage1
+2017-06-03 20:13:32,394 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:13:32,395 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:13:32,402 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mateusz'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:32,409 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-06-03 20:13:32,411 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-06-03 20:13:32,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/mule
+2017-06-03 20:13:32,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=52ad328
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:13:32,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=52ad328
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:13:32,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-06-03 20:13:32,503 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:32,511 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-06-03 20:13:32,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllOrders
+2017-06-03 20:13:32,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllOrders.stage1
+2017-06-03 20:13:32,624 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-06-03 20:13:32,637 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mateusz:type=Connector,name="connector.file.mule.default.1"
+2017-06-03 20:13:32,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mateusz                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-06-03 20:13:39,420 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mateusz'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:40,162 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-06-03 20:13:40,402 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-06-03 20:13:40,689 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-06-03 20:13:40,690 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-06-03 20:13:40,896 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@192f2f27: startup date [Sat Jun 03 20:13:40 CEST 2017]; root of context hierarchy
+2017-06-03 20:13:44,459 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-03 20:13:46,797 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-06-03 20:13:47,625 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-tx-log\tx2.log
+2017-06-03 20:13:47,657 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx1.log and C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\.\.mule\mateusz\queue-xa-tx-log\tx2.log
+2017-06-03 20:13:47,669 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2017-06-03 20:13:47,996 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-06-03 20:13:48,007 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllOrders
+2017-06-03 20:13:48,008 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@39f5b723
+2017-06-03 20:13:48,091 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllOrders.stage1
+2017-06-03 20:13:49,200 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:13:49,200 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\Komputer\AnypointStudio\workspace\LuzikArbuzik\MuleEsbToSmacznegoApp\.mule\apps\mateusz\mateusz.xml'}]"
+2017-06-03 20:13:49,249 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mateusz'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:49,254 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-06-03 20:13:49,254 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-06-03 20:13:49,421 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/mule
+2017-06-03 20:13:49,430 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=67e25252
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:13:49,430 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=67e25252
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2017-06-03 20:13:49,432 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2017-06-03 20:13:49,445 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-06-03 20:13:49,464 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-06-03 20:13:49,469 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllOrders
+2017-06-03 20:13:49,470 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllOrders.stage1
+2017-06-03 20:13:50,567 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-06-03 20:13:50,599 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mateusz:type=Connector,name="connector.file.mule.default.1"
+2017-06-03 20:13:50,605 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mateusz                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-06-03 20:13:54,703 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.480880797'. Object is: FileMessageDispatcher
+2017-06-03 20:13:54,731 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.480880797'. Object is: FileMessageDispatcher
+2017-06-03 20:13:54,738 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:13:55,106 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
+2017-06-03 20:14:02,179 [[mateusz].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\Komputer\Desktop\Mateusz.txt
